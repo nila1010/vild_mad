@@ -91,11 +91,12 @@ footer {
 .card {
   display: flex;
   flex-wrap: wrap;
-  height: 28rem;
+  gap: 2rem;
 }
 
 .produktcard {
   display: grid;
+  height: 28rem;
   margin: 0 auto;
   grid-template-columns: 21rem;
   border-radius: 40px;
