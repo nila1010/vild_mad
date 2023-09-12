@@ -41,3 +41,104 @@ header {
 .flex_header {
   display: flex;
 }
+
+/*PRODUKT
+--------------------*/
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  color: var(--h1-color);
+}
+
+.flex_header img {
+  width: 15rem;
+  position: absolute;
+  left: 10rem;
+}
+
+.flex_header h1 {
+  position: absolute;
+
+  top: 27px;
+}
+
+.flex_header {
+  position: relative;
+}
+
+header {
+  height: 20rem;
+}
+
+footer {
+  height: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  height: 28rem;
+}
+
+.produktcard {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 21rem;
+  border-radius: 40px;
+  background-color: var(--card-color);
+  position: relative;
+}
+
+.cardbillede,
+.cardtext,
+.cardarrow {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.cardarrow {
+  margin-right: 1rem;
+  width: 10%;
+  align-self: center;
+  justify-self: right;
+  z-index: 10;
+}
+
+.cardtext {
+  text-align: center;
+  align-self: end;
+  justify-self: center;
+  border: 3.5px solid #e19245;
+  border-radius: 60px;
+  padding: 0.5rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+  z-index: 10;
+}
+
+.cardbillede {
+  position: absolute;
+  width: 16rem;
+  height: 22rem;
+  top: 2rem;
+  left: 2.8rem;
+  overflow: hidden;
+}
+
+.cardbillede img {
+  scale: 3;
+}
