@@ -105,7 +105,11 @@ footer {
 
 .cardbillede,
 .cardtext,
-.cardarrow {
+.cardarrow,
+.cardarrowbagside,
+.cardtextbagside,
+.produktcard p,
+.fundetmig {
   grid-row: 1;
   grid-column: 1;
 }
@@ -116,6 +120,15 @@ footer {
   align-self: center;
   justify-self: right;
   z-index: 10;
+}
+
+.cardarrowbagside {
+  margin-right: 1rem;
+  width: 10%;
+  align-self: center;
+  justify-self: right;
+  z-index: 10;
+  transform: rotate(180deg);
 }
 
 .cardtext {
@@ -130,6 +143,13 @@ footer {
   z-index: 10;
 }
 
+.cardtextbagside {
+  text-align: center;
+  align-self: start;
+  justify-self: center;
+  margin-top: 3rem;
+}
+
 .cardbillede {
   position: absolute;
   width: 16rem;
@@ -141,4 +161,21 @@ footer {
 
 .cardbillede img {
   scale: 3;
+}
+
+.produktcard p:nth-child(4) {
+  position: absolute;
+  top: 15rem;
+  left: 2rem;
+}
+.produktcard p:nth-child(3) {
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+}
+
+.fundetmig {
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 3rem;
 }
