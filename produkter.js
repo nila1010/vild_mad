@@ -30,6 +30,8 @@ function showProduct(product) {
   copy.querySelector(".h2").textContent = product.navn;
   copy.querySelector(".findmig").textContent = product.landskab;
   copy.querySelector(".findmig2").textContent = product.landskab2;
+  copy.querySelector(".levergodt").textContent = product.landskab_sub1;
+  copy.querySelector(".levergodt2").textContent = product.landskab_sub2;
 
   document.querySelector(".card").appendChild(copy);
 

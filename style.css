@@ -1,7 +1,20 @@
+/*
+font-family: "josefin-sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: gambado-sans-forte, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+-------------------------*/
+
 :root {
   --background-color: #e1eff4;
   --h1-color: #475e79;
   --card-color: #fefcf0;
+  --h1: "gambado-sans-forte", sans-serif;
+  --p: "josefin-sans", sans-serif;
 }
 
 * {
@@ -21,11 +34,19 @@ img {
 
 h2 {
   color: var(--card-color);
+  font-family: var(--h1);
 }
 
 h1 {
-  font-size: 7cqw;
+  font-size: 4rem;
+  font-family: var(--h1);
   color: var(--h1-color);
+}
+
+p {
+  font-family: var(--p);
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .logo {
@@ -148,7 +169,6 @@ footer {
   border: 3.5px solid #e19245;
   border-radius: 60px;
   padding: 0.5rem;
-  width: 10rem;
   margin-bottom: 2.5rem;
   z-index: 10;
 }
