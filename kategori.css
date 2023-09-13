@@ -6,11 +6,53 @@ a{
     list-style: none;
   }
 
+/* header */
+.logo {
+  max-width: 100px; 
+}
+
+.flex_header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 3em;
+  margin-bottom: -5.1em;
+}
+
+h1 {
+  max-width: 15ch;
+  font-size: 6cqw;
+  line-height: 1.2em;
+}
+@media(min-width:768px){
+  h1{
+    font-size: 4cqw;
+    max-width: 20ch;
+  }
+}
+
+.side-logo {
+  max-width: 200px;
+  z-index: 10;
+}
+@media(min-width:768px){
+  .flex_header {
+    margin-top: -1em;
+    margin-bottom: 2em;
+    justify-content: space-between;
+  }
+  .side-logo {
+    margin-bottom: -3.7em;
+
+  }
+}
+
+
 /* kategorierne */
 #categories{
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    /* margin: 1em; */
   }
 
   @media(min-width:768px){
@@ -18,8 +60,16 @@ a{
         flex-direction: row;
         justify-content: center;
         justify-content: space-between;
+        margin-left: 1em;
+        margin-right: 1em;
+        max-width: 1920px;
     }
   }
+  @media (min-width: 1921px) {
+    #categories{
+      max-width: 1920px;
+  }
+}
   /* bagrundsfarver til de enkelte kategorier */
   .category-item:nth-child(1) {
     background-color: #859986; 
@@ -63,7 +113,7 @@ a{
     color: var(--card-color);
     padding-left: 1em;
     padding-right: 1em;
-    padding-top: 2em;
+
   }
   
   @media(min-width:768px){
@@ -71,8 +121,7 @@ a{
         text-align: center;
         padding-left: 0;
         padding-right:0;
-        padding-top: 0;
-        padding-bottom: 2em;
+        padding-top: 2em;
         font-size: 3cqw;
     }
   }
@@ -101,11 +150,11 @@ a{
     width: 100%;
   }
   .wave2 {
-    bottom: -20px;
+    bottom: -35px;
   }
-  @media(max-width:768px){
+  @media(min-width:500px){
     .wave2 {
-        bottom: -51px;
+        bottom: -60px;
     }
   }
   .wave1 {
@@ -115,7 +164,7 @@ a{
   
 /* eksempel på andet style */
   
-  /* @media(min-width: 768px) {
+  @media(min-width: 768px) {
     .wave1,
     .wave2 {
         display: none;
@@ -127,7 +176,7 @@ a{
     .category-item:nth-child(2),
     .category-item:nth-child(3),
     .category-item:nth-child(4) {
-      border-radius: 80%;
+      border-radius: 10%;
     
     }
-  } */
+  }
