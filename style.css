@@ -15,6 +15,7 @@ font-style: normal;
   --card-color: #fefcf0;
   --h1: "gambado-sans-forte", sans-serif;
   --p: "josefin-sans", sans-serif;
+  --knapfarve: #d17b58;
 }
 
 * {
@@ -236,4 +237,48 @@ footer {
   animation-name: fliptilbage;
   animation-duration: 1s;
   animation-fill-mode: backwards;
+}
+
+/*FORMULAR
+-----------------*/
+
+.svar {
+  font-family: var(--h1);
+  color: var(--h1-color);
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.svar input {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 60px;
+  border: 3.5px solid #e19245;
+  background-color: var(--card-color);
+  align-self: center;
+}
+
+.svar input::placeholder {
+  text-align: center;
+  font-family: var(--h1);
+  color: var(--h1-color);
+  font-size: 2rem;
+}
+form {
+  margin: 3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: var(--h1);
+  color: var(--card-color);
+  font-size: 2rem;
+  background-color: var(--knapfarve);
+  margin-top: 2rem;
+  border-radius: 60px;
+  align-self: center;
+  width: 20rem;
 }
