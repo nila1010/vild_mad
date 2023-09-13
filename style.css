@@ -51,9 +51,9 @@ p {
 }
 
 .logo {
-  width: 5rem;
+  aspect-ratio: 3/2;
+  width: 7rem;
   border-radius: 45%;
-  margin-bottom: 7%;
 }
 
 header {
@@ -281,4 +281,35 @@ button {
   border-radius: 60px;
   align-self: center;
   width: 20rem;
+}
+
+/*NAVIGATION
+---------------------*/
+nav img,
+.subnav img {
+  aspect-ratio: 2/1;
+  border-radius: 60px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a,
+.subnav a {
+  width: 10%;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.subnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
 }
