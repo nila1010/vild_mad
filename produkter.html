@@ -20,30 +20,6 @@
     <main>
 
         <article class="card">
-            <div class="produktcard">
-                <div class="flip-card-front">
-                    <div class="cardbillede">
-                        <img src="img/Kantarel_ravarekort_app.png" alt="billede af produkt">
-                    </div>
-                    <h2 class="cardtext">Kanterel</h2>
-                    <img class="cardarrow" src="img/right-arrow.png" alt="pil">
-                </div>
-                <div class="flip-card-back">
-                    <h2 class="cardtextbagside">Kanterel</h2>
-                    <img class="cardarrowbagside" src="img/right-arrow.png" alt="pil">
-                    <p>Du kan finde mig i <span class="findmig"></span></p>
-                    <p>Jeg lever godt i <span class="levergodt"></span></p>
-                    <div class="fundetmig">
-                        <p>Har du fundet mig?</p>
-                        <label>
-                            <input class="check" type="radio" name="Ja" value="ja">
-                        </label>
-                        <label>
-                            <input type="radio" name="nej" value="nej">
-                        </label>
-                    </div>
-                </div>
-            </div>
         </article>
         <form>
             <label>Send svar til din lærer
@@ -53,6 +29,32 @@
         </form>
 
     </main>
+    <template>
+        <div class="produktcard">
+            <div class="flip-card-front">
+                <div class="cardbillede">
+                    <img src="img/Kantarel_ravarekort_app.png" alt="billede af produkt">
+                </div>
+                <h2 class="cardtext">Kanterel</h2>
+                <img class="cardarrow" src="img/right-arrow.png" alt="pil">
+            </div>
+            <div class="flip-card-back">
+                <h2 class="cardtextbagside h2">Kanterel</h2>
+                <img class="cardarrowbagside" src="img/right-arrow.png" alt="pil">
+                <p>Du kan finde mig i <span class="findmig"></span><span class="findmig2"></span></p>
+                <p>Jeg lever godt i <span class="levergodt"></span>&<span class="levergodt2"></span> </p>
+                <div class="fundetmig">
+                    <p>Har du fundet mig?</p>
+                    <label>
+                        <input class="check" type="radio" name="Ja" value="ja">
+                    </label>
+                    <label>
+                        <input type="radio" name="nej" value="nej">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </template>
     <footer>
         <img src="img/footer.png" alt="footerbillede">
     </footer>

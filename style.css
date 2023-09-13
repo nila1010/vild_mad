@@ -53,7 +53,7 @@ body {
 
 main {
   flex-grow: 1;
-  margin: 2rem 0;
+  margin: 2rem 1.7rem;
 }
 
 h1 {
@@ -91,9 +91,7 @@ footer {
 .card {
   display: flex;
   flex-wrap: wrap;
-  height: 28rem;
-  width: 21rem;
-  margin: 0 auto;
+  gap: 2rem;
 }
 
 .produktcard {
@@ -172,7 +170,7 @@ footer {
 }
 
 .cardbillede img {
-  scale: 3;
+  scale: 2;
 }
 
 .produktcard p:nth-child(4) {
