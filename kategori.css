@@ -5,6 +5,14 @@ a{
   li{
     list-style: none;
   }
+footer{
+  margin-top:2em;
+}
+@media(min-width:768px){
+  footer{
+    margin-top:10em;
+  }
+}
 
 /* header */
 .logo {
