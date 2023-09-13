@@ -92,15 +92,27 @@ footer {
   display: flex;
   flex-wrap: wrap;
   height: 28rem;
+  width: 21rem;
+  margin: 0 auto;
 }
 
 .produktcard {
   display: grid;
-  margin: 0 auto;
+  transition: transform 1.8s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.flip-card-front,
+.flip-card-back {
+  grid-column: 1;
+  grid-row: 1;
+  backface-visibility: hidden;
+  display: grid;
   grid-template-columns: 21rem;
+  height: 28rem;
   border-radius: 40px;
   background-color: var(--card-color);
-  position: relative;
 }
 
 .cardbillede,
@@ -178,4 +190,32 @@ footer {
   align-self: end;
   justify-self: center;
   margin-bottom: 3rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes flip {
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.cardarrowflip {
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fliptilbage {
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+
+.cardarrowfliptilbage {
+  animation-name: fliptilbage;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
 }
