@@ -1,6 +1,9 @@
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("kategori");
+
 // Denne linje bruger Fetch API til at sende en GET-anmodning til den angivne URL.
 // Den henter data fra en ekstern kilde (https://xdykxnsdtkqynuixtakq.supabase.co/rest/v1/data?subkategori).
-fetch("https://xdykxnsdtkqynuixtakq.supabase.co/rest/v1/data?subkategori", {
+fetch("https://xdykxnsdtkqynuixtakq.supabase.co/rest/v1/subkategorier", {
   method: "GET",
   headers: {
     // API-nøglen sendes som en del af headeren for at godkende anmodningen.
@@ -20,15 +23,19 @@ function showCategories(cats){
 
 // Denne funktion tager en kategori som argument og opretter et klon af en HTML-skabelon.
 function showCategory(cat){
-    const template = document.querySelector("template").content;
+  const template = document.querySelector("template").content;
 
-    const clone = template.cloneNode(true);
+  const clone = template.cloneNode(true);
 
-    // Sætter tekstindholdet af linket til kategorinavnet.
-    clone.querySelector("a").textContent=cat.category;
-    // Sætter href-attributten på linket til en URL med kategoriens navn.
-    clone.querySelector("a").href = `productlist.html?category=${cat.category}`;
+  // Sæt produktets navn og billedkilde
+  clone.querySelector(".product-name").textContent = cat.produkter;
+  clone.querySelector(".product-image").src = cat.billeder;
+  clone.querySelector(".product-image").alt = cat.produkter;
 
-    // Tilføjer den klonede kategori til DOM'en.
-    document.querySelector("#categories").appendChild(clone);
+  // Sæt href-attributten
+  clone.querySelector(".akat").href = `produkter.html?produkt=${cat.produkter}&kategori=${category}`;
+
+  // Tilføj den klonede kategori til DOM'en.
+  document.querySelector("#categories").appendChild(clone);
 }
+
