@@ -36,6 +36,15 @@ function showProduct(product) {
   copy.querySelector(".produktcard").addEventListener("click", flip);
   document.querySelector(".headerh1").textContent = produkt;
   document.querySelector(".textheader").textContent = produkt;
+  //nav
+  document.querySelector(".strandlink").href = `produkter.html?produkt=${produkt}&kategori=Strand`;
+  document.querySelector(".bylink").href = `produkter.html?produkt=${produkt}&kategori=By`;
+  document.querySelector(".skovlink").href = `produkter.html?produkt=${produkt}&kategori=Skoven`;
+  //subnav
+  document.querySelector(".svamplink").href = `produkter.html?produkt=Svampe&kategori=${kategori}`;
+  document.querySelector(".busklink").href = `produkter.html?produkt=Buske&kategori=${kategori}`;
+  document.querySelector(".tanglink").href = `produkter.html?produkt=Tang&kategori=${kategori}`;
+  document.querySelector(".urtelink").href = `produkter.html?produkt=Urter&kategori=${kategori}`;
 
   document.querySelector(".card").appendChild(copy);
 }
