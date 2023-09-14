@@ -73,7 +73,7 @@ nav a {
   grid-row: 1;
   margin-left: 20%;
   font-size: 3cqw;
-  line-height: 1rem;
+  line-height: 102%;
   color: var(--knapfarve);
 }
 

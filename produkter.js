@@ -34,6 +34,9 @@ function showProduct(product) {
   copy.querySelector(".levergodt").textContent = product.landskab_sub1;
   copy.querySelector(".levergodt2").textContent = product.landskab_sub2;
   copy.querySelector(".produktcard").addEventListener("click", flip);
+  document.querySelector(".headerh1").textContent = produkt;
+  document.querySelector(".textheader").textContent = produkt;
+
   document.querySelector(".card").appendChild(copy);
 }
 

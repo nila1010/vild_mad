@@ -32,7 +32,7 @@ function showCategory(cat) {
   clone.querySelector(".product-image").alt = cat.produkter;
 
   // Sæt href-attributten
-  clone.querySelector(".akat").href = `produkter.html?produkt=${cat.produkter}&kategori=${category}`;
+  clone.querySelector(".akat").href = `produkter.html?produkt=${cat.sendvalue}&kategori=${category}`;
 
   // Tilføj den klonede kategori til DOM'en.
   document.querySelector("#categories").appendChild(clone);
