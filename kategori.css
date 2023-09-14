@@ -47,10 +47,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 1em;
   /* margin: 1em; */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   #categories {
     flex-direction: row;
     justify-content: center;
@@ -66,11 +67,12 @@ footer {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 568px) {
   .category-item{
     display: grid;
-    grid-template-columns: 20rem;
-    height: 28rem;
+    grid-template-columns: 18rem;
+    height: 20rem;
+
   }}
 /* bagrundsfarver til de enkelte kategorier */
 .category-item:nth-child(1) {
@@ -86,7 +88,7 @@ footer {
   background-color: #d17b58;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .category-item:nth-child(even) .product-name {
     text-align: right;
   }
@@ -103,7 +105,7 @@ footer {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .product {
     height: 100px;
     width: 200px;
@@ -111,19 +113,20 @@ footer {
 }
 
 .product-name {
-  font-size: 6cqw;
+  font-size: 2rem;
   color: var(--card-color);
   padding-left: 1em;
   padding-right: 1em;
+  margin-top: 0em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .product-name {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 2em;
-    font-size: 3cqw;
+    margin-top: 2em;
+    font-size: 2rem;
   }
 }
 
@@ -164,14 +167,14 @@ footer {
 
 /* eksempel på andet style */
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .wave1,
   .wave2 {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .category-item:nth-child(1),
   .category-item:nth-child(2),
   .category-item:nth-child(3),
