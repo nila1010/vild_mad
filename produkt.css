@@ -89,6 +89,8 @@ nav a {
   gap: 2rem;
 }
 
+/* Bagsiden er skjult og der er tilføjes en overganngseffekt  
+-----*/
 .produktcard {
   display: grid;
   transition: transform 1.8s;
@@ -186,22 +188,31 @@ nav a {
   margin-bottom: 3rem;
 }
 
+/* bagsiden flipper så at den vender korrekt efter animationen 
+-----*/
 .flip-card-back {
   transform: rotateY(180deg);
 }
 
+/* Kort flip animation  
+  der bruges keyframes til vende(rotere) elementet over Y-aksen
+-----*/
 @keyframes flip {
   to {
     transform: rotateY(180deg);
   }
 }
 
+/* manipulerer animaitonen 
+-----*/
 .cardarrowflip {
   animation-name: flip;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
+/* Laver en ny animaiton magen til, for at vende elementet tilbage
+-----*/
 @keyframes fliptilbage {
   to {
     transform: rotateY(-180deg);

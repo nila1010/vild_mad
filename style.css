@@ -105,14 +105,21 @@ header {
   z-index: 1;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 780px) {
   .main_index {
     display: flex;
     flex: 1;
     flex-direction: row;
-    gap: 3%;
     width: 100%;
     justify-content: space-evenly;
+    margin-top: -4%;
+  }
+  .location_text {
+    font-size: 3rem;
+  }
+
+  .flex_header {
+    margin-top: -5%;
   }
 
   .location-img {
@@ -122,9 +129,10 @@ header {
   .h1 {
     font-size: 6cqw;
   }
+
   .figur {
     position: relative;
-    margin: -9% 0% 4%;
+    margin: -3% 0% 4%;
     width: 59%;
   }
 
