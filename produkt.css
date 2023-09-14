@@ -1,3 +1,85 @@
+/*GlOBAL
+------------------*/
+main {
+  margin: 2rem 1.7rem;
+}
+
+/*NAVIGATION
+---------------------*/
+nav img,
+.subnav img {
+  aspect-ratio: 2/1;
+  border-radius: 60px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  width: 15%;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.subnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.subnav a {
+  width: 10%;
+}
+
+.bordernav {
+  border: 3.5px solid #e19245;
+}
+
+.logoprodukt {
+  aspect-ratio: 3/2;
+  width: 10rem;
+  border-radius: 45%;
+}
+
+/*OVERSKRIFT OG SVAMP
+--------------------*/
+.flex_header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+
+.flex_header img {
+  grid-column: 2;
+}
+
+.flex_header h1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.flex_header p {
+  margin-top: 20%;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 20%;
+  font-size: 2cqw;
+  color: var(--knapfarve);
+}
+
+.flex_header p:nth-child(3) {
+  margin-top: 30%;
+}
+
 /*PRODUKT
 --------------------*/
 
