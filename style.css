@@ -37,7 +37,8 @@ h2 {
 }
 
 h1 {
-  font-size: 7cqw;
+  font-size: 5cqw;
+  max-width: 18ch;
   font-family: var(--h1);
   color: var(--h1-color);
   line-height: 90%;
@@ -58,7 +59,7 @@ a {
 .logo {
   width: 5rem;
   border-radius: 45%;
-  margin-bottom: 7%;
+  margin-bottom: 1rem;
 }
 
 header {
@@ -69,6 +70,12 @@ header {
   display: flex;
 }
 
+.flex_header h1 {
+  max-width: 19ch;
+  font-size: 7cqw;
+  margin: 1rem 0 0 2rem;
+}
+
 /******************* INDEX ***********************/
 
 .main_index {
@@ -76,7 +83,6 @@ header {
 }
 
 .figur {
-  width: 157%;
   overflow: hidden;
   margin: -8% -16% 0%;
 }
@@ -106,20 +112,21 @@ header {
 }
 
 @media (min-width: 780px) {
+  .flex_header h1 {
+    max-width: 19ch;
+    margin: 2rem 0 0 8rem;
+    font-size: 6cqw;
+  }
+
   .main_index {
     display: flex;
     flex: 1;
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
-    margin-top: -4%;
   }
   .location_text {
     font-size: 3rem;
-  }
-
-  .flex_header {
-    margin-top: -5%;
   }
 
   .location-img {

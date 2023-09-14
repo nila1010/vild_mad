@@ -14,6 +14,33 @@ footer {
   }
 }
 
+/* navigation */
+nav img {
+  aspect-ratio: 2/1;
+  border-radius: 60px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  width: 15%;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.logoprodukt {
+  aspect-ratio: 3/2;
+  width: 10rem;
+  border-radius: 45%;
+}
+
 /* header */
 .logokategori {
   max-width: 100px;
@@ -27,13 +54,16 @@ footer {
   margin-bottom: -5.1em;
 }
 
+.h1flexheader {
+  margin: 1.2rem 0 0 2rem;
+}
 .side-logo {
-  max-width: 200px;
+  max-width: 30%;
   z-index: 10;
 }
 @media (min-width: 768px) {
   .flex_header {
-    margin-top: -1em;
+    /*  margin-top: -1em; */
     margin-bottom: 2em;
     justify-content: space-between;
   }
@@ -68,12 +98,12 @@ footer {
 }
 
 @media (min-width: 568px) {
-  .category-item{
+  .category-item {
     display: grid;
     grid-template-columns: 18rem;
     height: 20rem;
-
-  }}
+  }
+}
 /* bagrundsfarver til de enkelte kategorier */
 .category-item:nth-child(1) {
   background-color: #859986;
