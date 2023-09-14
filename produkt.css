@@ -137,6 +137,7 @@ nav a {
 }
 
 .cardtext {
+  color: var(--h1-color);
   text-align: center;
   align-self: end;
   justify-self: center;
@@ -148,6 +149,7 @@ nav a {
 }
 
 .cardtextbagside {
+  color: var(--h1-color);
   text-align: center;
   align-self: start;
   justify-self: center;
