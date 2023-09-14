@@ -56,10 +56,11 @@ nav a {
 
 .h1flexheader {
   margin: 1.2rem 0 0 2rem;
+  z-index: 2;
 }
 .side-logo {
   max-width: 30%;
-  z-index: 10;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .flex_header {
