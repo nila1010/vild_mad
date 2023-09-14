@@ -45,6 +45,7 @@ footer {
 /* kategorierne */
 #categories {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   /* margin: 1em; */
 }
@@ -64,6 +65,13 @@ footer {
     max-width: 1920px;
   }
 }
+
+@media (min-width: 400px) {
+  .category-item{
+    display: grid;
+    grid-template-columns: 20rem;
+    height: 28rem;
+  }}
 /* bagrundsfarver til de enkelte kategorier */
 .category-item:nth-child(1) {
   background-color: #859986;
