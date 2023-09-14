@@ -32,14 +32,11 @@ function showProduct(product) {
   copy.querySelector(".findmig2").textContent = product.landskab2;
   copy.querySelector(".levergodt").textContent = product.landskab_sub1;
   copy.querySelector(".levergodt2").textContent = product.landskab_sub2;
-
+  copy.querySelector(".produktcard").addEventListener("click", flip);
   document.querySelector(".card").appendChild(copy);
+}
 
-  const arrowr = document.querySelectorAll(".produktcard");
-
-  arrowr.forEach((arrowr) => arrowr.addEventListener("click", flip));
-
-  function flip() {
-    this.classList.toggle("cardarrowflip");
-  }
+function flip() {
+  console.log("test");
+  this.classList.toggle("cardarrowflip");
 }
