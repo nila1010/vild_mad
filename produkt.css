@@ -1,0 +1,259 @@
+/*GlOBAL
+------------------*/
+main {
+  margin: 2rem 1.7rem;
+}
+
+/*NAVIGATION
+---------------------*/
+nav img,
+.subnav img {
+  aspect-ratio: 2/1;
+  border-radius: 60px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  width: 15%;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.subnav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.subnav a {
+  width: 10%;
+}
+
+.bordernav {
+  border: 3.5px solid #e19245;
+}
+
+.logoprodukt {
+  aspect-ratio: 3/2;
+  width: 10rem;
+  border-radius: 45%;
+}
+
+/*OVERSKRIFT OG SVAMP
+--------------------*/
+.flex_header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+
+.flex_header img {
+  grid-column: 2;
+}
+
+.flex_header h1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.flex_header p {
+  margin-top: 20%;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 20%;
+  font-size: 2cqw;
+  color: var(--knapfarve);
+}
+
+.flex_header p:nth-child(3) {
+  margin-top: 30%;
+}
+
+/*PRODUKT
+--------------------*/
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.produktcard {
+  display: grid;
+  transition: transform 1.8s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.flip-card-front,
+.flip-card-back {
+  grid-column: 1;
+  grid-row: 1;
+  backface-visibility: hidden;
+  display: grid;
+  grid-template-columns: 21rem;
+  height: 28rem;
+  border-radius: 40px;
+  background-color: var(--card-color);
+}
+
+.cardbillede,
+.cardtext,
+.cardarrow,
+.cardarrowbagside,
+.cardtextbagside,
+.produktcard p,
+.fundetmig {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.cardarrow {
+  margin-right: 1rem;
+  width: 10%;
+  align-self: center;
+  justify-self: right;
+  z-index: 10;
+}
+
+.cardarrowbagside {
+  margin-right: 1rem;
+  width: 10%;
+  align-self: center;
+  justify-self: right;
+  z-index: 10;
+  transform: rotate(180deg);
+}
+
+.cardtext {
+  color: var(--h1-color);
+  text-align: center;
+  align-self: end;
+  justify-self: center;
+  border: 3.5px solid #e19245;
+  border-radius: 60px;
+  padding: 0.5rem;
+  margin-bottom: 2.5rem;
+  z-index: 10;
+}
+
+.cardtextbagside {
+  color: var(--h1-color);
+  text-align: center;
+  align-self: start;
+  justify-self: center;
+  margin-top: 3rem;
+}
+
+.cardbillede {
+  position: absolute;
+  width: 16rem;
+  height: 22rem;
+  top: 2rem;
+  left: 2.8rem;
+  overflow: hidden;
+}
+
+.cardbillede img {
+  scale: 2;
+}
+
+.produktcard p:nth-child(4) {
+  position: absolute;
+  top: 15rem;
+  left: 2rem;
+}
+.produktcard p:nth-child(3) {
+  position: absolute;
+  top: 9rem;
+  left: 2rem;
+}
+
+.fundetmig {
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes flip {
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.cardarrowflip {
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fliptilbage {
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+
+.cardarrowfliptilbage {
+  animation-name: fliptilbage;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+/*FORMULAR
+-----------------*/
+
+.svar {
+  font-family: var(--h1);
+  color: var(--h1-color);
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.svar input {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 60px;
+  border: 3.5px solid #e19245;
+  background-color: var(--card-color);
+  align-self: center;
+}
+
+.svar input::placeholder {
+  text-align: center;
+  font-family: var(--h1);
+  color: var(--h1-color);
+  font-size: 2rem;
+}
+form {
+  margin: 3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: var(--h1);
+  color: var(--card-color);
+  font-size: 2rem;
+  background-color: var(--knapfarve);
+  margin-top: 2rem;
+  border-radius: 60px;
+  align-self: center;
+  width: 20rem;
+}

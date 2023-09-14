@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/fwn7bql.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produkt.css">
+    <title>Produkter</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logoprodukt" href="index.html">
+                <img src="img/Vildmad_logo.png" alt="logo">
+            </a>
+            <div class="mainnav">
+                <a href="produkter.html">
+                    <img class="skovikon" src="img/skov.png" alt="skov ikon">
+                </a>
+                <a href="produkter.html">
+                    <img class="strandikon" src="img/strand.png" alt="strand ikon">
+                </a>
+                <a href="produkter.html">
+                    <img class="byikon" src="img/by.png" alt="by ikon">
+                </a>
+            </div>
+        </nav>
+        <div class="subnav">
+            <a href="produkter.html">
+                <img class="svampikon" src="img/stamps-svampe.png" alt="svamp ikon">
+            </a>
+            <a href="produkter.html">
+                <img class="buskikon" src="img/stamps_buske.png" alt="busk ikon">
+            </a>
+            <a href="produkter.html">
+                <img class="tangikon" src="img/stamps_tang.png" alt="tang ikon">
+            </a>
+            <a href="produkter.html">
+                <img class="urterikon" src="img/stamps_urter.png" alt=" urter ikon">
+            </a>
+        </div>
+        <div class="flex_header">
+            <h1>Svampe
+            </h1>
+            <p>Læs om de forskellige svampe.
+            </p>
+            <p>
+                Fortæl din lærer hvilke
+                du har fundet.</p>
+            <img src="img/logo_side1.png" alt="figur">
+        </div>
+    </header>
+    <main>
+
+        <article class="card">
+        </article>
+        <form>
+            <label class="svar">Send svar til din lærer
+                <input type="text" id="fname" placeholder="Indtast navn">
+            </label>
+            <button type="submit">Send</button>
+        </form>
+
+    </main>
+    <template>
+        <div class="produktcard">
+            <div class="flip-card-front">
+                <div class="cardbillede">
+                    <img src="img/Kantarel_ravarekort_app.png" alt="billede af produkt">
+                </div>
+                <h2 class="cardtext">Kanterel</h2>
+                <img class="cardarrow" src="img/right-arrow.png" alt="pil">
+            </div>
+            <div class="flip-card-back">
+                <h2 class="cardtextbagside h2">Kanterel</h2>
+                <img class="cardarrowbagside" src="img/right-arrow.png" alt="pil">
+                <p>Du kan finde mig ved <span class="findmig"></span> <span class="findmig2"></span></p>
+                <p>Jeg lever godt i <span class="levergodt"></span> &amp; <span class="levergodt2"></span> </p>
+                <div class="fundetmig">
+                    <p>Har du fundet mig?</p>
+                    <label class="labelcard">Ja
+                        <input class="check" type="radio" name="Ja" value="ja">
+                    </label>
+                    <label>
+                        Nej
+                        <input type="radio" name="nej" value="nej">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </template>
+    <footer>
+        <img src="img/footer.png" alt="footerbillede">
+    </footer>
+    <script src="produkter.js"></script>
+</body>
+
+
+</html>
