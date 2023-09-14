@@ -38,6 +38,5 @@ function showProduct(product) {
 }
 
 function flip() {
-  console.log("test");
   this.classList.toggle("cardarrowflip");
 }

@@ -11,18 +11,17 @@ fetch("https://xdykxnsdtkqynuixtakq.supabase.co/rest/v1/subkategorier", {
   },
 })
   // Den følgende linje konverterer svaret til JSON-format.
-  .then(res => res.json())
+  .then((res) => res.json())
   // Når JSON-dataen er klar, kaldes funktionen "showCategories" med dataen som argument.
   .then(showCategories);
 
 // Denne funktion viser kategorierne i konsollen og kalder funktionen "showCategory" for hver kategori.
-function showCategories(cats){
-    console.log(cats);
-    cats.forEach(showCategory)
+function showCategories(cats) {
+  cats.forEach(showCategory);
 }
 
 // Denne funktion tager en kategori som argument og opretter et klon af en HTML-skabelon.
-function showCategory(cat){
+function showCategory(cat) {
   const template = document.querySelector("template").content;
 
   const clone = template.cloneNode(true);
@@ -38,4 +37,3 @@ function showCategory(cat){
   // Tilføj den klonede kategori til DOM'en.
   document.querySelector("#categories").appendChild(clone);
 }
-

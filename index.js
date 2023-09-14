@@ -15,14 +15,12 @@ fetch("https://xdykxnsdtkqynuixtakq.supabase.co/rest/v1/kategorier", {
   .then(showItems);
 
 function showItems(items) {
-  console.log(items);
   // Vi looper dataen og kalder funktionen showItem
   items.forEach(showItem);
 }
 
 //Laver en function for at få fat på template
 function showItem(item) {
-  console.log(item);
   // fanger template
   const template = document.querySelector("template").content;
   //laver en kopi
