@@ -3,6 +3,7 @@
 // De kan kombineret kateogir=eq.Svampe&select=navn,id
 
 const urlParams = new URLSearchParams(window.location.search);
+
 //Landskab
 const kategori = urlParams.get("kategori");
 //Svampe, Urter, Buske, Tang
